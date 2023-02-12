@@ -12,13 +12,13 @@ import search from './assets/icons/static/icons8-search.svg'
 import { tempdata } from './assets/temp'
 import axios from 'axios'
 
-const key = '91261328ffcb4bf496b45019230802'
-
 // get weather data
 
 export const fun = async searchTerm => {
 	try {
-		const { data } = await axios.get(`http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${searchTerm}&days=7&aqi=yes&alerts=yes`)
+		const { data } = await axios.get(
+			`https://api.weatherapi.com/v1/forecast.json?key=${import.meta.env.VITE_API_KEY}&q=${searchTerm}&days=7&aqi=yes&alerts=yes`
+		)
 		return data
 	} catch (error) {
 		alert('Search for valid place...')
@@ -107,7 +107,6 @@ export function fetchDayData(weatherData) {
 			temp: `${i.temp_c} °C`,
 		}
 	})
-	console.log(res)
 	return res
 }
 
@@ -124,7 +123,6 @@ export function fetchWeekData(weatherData) {
 			temp: `${i.day.maxtemp_c} °C`,
 		}
 	})
-	console.log(res)
 	return res
 }
 
