@@ -1,0 +1,23 @@
+.hcard {
+	background-color: #fff;
+	padding: 0.5rem 2rem;
+	border-radius: 1.5rem;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 12rem;
+	.head {
+		font-size: 1rem;
+		font-weight: 400;
+		color: hsl(0, 0%, 70%);
+	}
+	.status {
+		font-size: 2rem;
+		font-weight: 400;
+	}
+	.exp {
+		font-size: 1rem;
+		font-weight: 400;
+	}
+}

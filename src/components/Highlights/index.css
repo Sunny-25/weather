@@ -1,0 +1,11 @@
+.highlights h1 {
+  font-size: 1.25rem;
+  color: #fff;
+}
+.highlights .highlights-grid {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}/*# sourceMappingURL=index.css.map */

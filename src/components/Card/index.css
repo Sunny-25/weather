@@ -1,0 +1,26 @@
+.card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 3rem 0.25rem;
+  text-align: center;
+  padding: 2rem 0;
+  border-radius: 1rem;
+  width: 8rem;
+  height: 10rem;
+}
+.card h1 {
+  font-size: 1rem;
+  color: hsl(263deg, 22%, 18.5%);
+  font-weight: 400;
+}
+.card h1 span {
+  color: hsl(0deg, 0%, 60%);
+  margin-left: 4px;
+}
+.card img {
+  height: 6rem;
+  width: 6rem;
+  margin: auto;
+}/*# sourceMappingURL=index.css.map */

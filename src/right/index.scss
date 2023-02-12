@@ -1,0 +1,62 @@
+.right {
+	background-color: hsl(0, 0%, 90%);
+	border-top-right-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+	border-width: 0;
+	flex: 7;
+	padding: 2rem 5rem;
+
+	.right-top {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex: 3;
+		align-items: center;
+		h1 {
+			color: hsl(0, 0%, 70%);
+			margin-right: 1rem;
+			font-weight: 400;
+			font-size: 1.25rem;
+			cursor: pointer;
+			transition: 1s all ease;
+		}
+
+		h1:hover {
+			color: #fff;
+			text-decoration: underline;
+			transition: 1s all ease;
+		}
+		.type-selected {
+			color: #fff;
+			text-decoration: underline;
+			transition: 1s all ease;
+		}
+
+		.temp {
+			background-color: white;
+			height: 2rem;
+			width: 2rem;
+			border-radius: 50%;
+			margin-right: 1rem;
+			display: grid;
+			cursor: pointer;
+			place-items: center;
+			font-weight: 600;
+			transition: 1s all ease;
+		}
+
+		.temp:hover {
+			background-color: #000;
+			color: #fff;
+		}
+	}
+	.week {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.right-bottom {
+		flex: 9;
+	}
+}
